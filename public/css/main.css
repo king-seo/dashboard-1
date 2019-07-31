@@ -1,0 +1,29 @@
+:root {
+    purple-light: #B477F2;
+    purple-dark: #1B378C;
+    neon-green: #92cf48;
+    grey-light: #F4F6F9;
+    grey-dark: #eaedf3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(greyLight);
+}
+
+#sideMenu {
+    background: var(purpleLight);
+    max-width: 280px;
+}
+
+nav {
+    color: var(greyLight);
+}
+
+nav a {
+    display: block;
+}
