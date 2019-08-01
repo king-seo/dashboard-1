@@ -5,22 +5,136 @@
   <meta charset="utf-8">
   <title>DashBoard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link rel="stylesheet" href="css/content-area.css">
+  <script src="https://kit.fontawesome.com/bcc1c82b2c.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <style src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></style>
+
 </head>
 
 <body>
   <section id="sideMenu">
     <nav>
-      <a href="#">Item</a>
-      <a href="#">Item</a>
-      <a href="#">Item</a>
-      <a href="#">Item</a>
-      <a href="#">Item</a>
-      <a href="#">Item</a>
-
+      <a href="#" class="active"><i class="fas fa-home"></i>Item</a>
+      <a href="#"><i class="fas fa-sticky-note"></i>Item</a>
+      <a href="#"><i class="fas fa-bookmark"></i>Item</a>
+      <a href="#"><i class="fas fa-calendar-check"></i>Item</a>
+      <a href="#"><i class="fas fa-user-circle"></i>Item</a>
+      <a href="#"><i class="fas fa-cog"></i>Item</a>
     </nav>
   </section>
+  <header>
+    <div class="search-area">
+      <i class="fas fa-search"></i>
+      <input type="text" class="search">
+    </div>
+    <div class="user-area">
+      <a href="#" class="add">+ add</a>
+      <a href="#" class="notification">
+        <i class="far fa-bell"></i>
+        <span class="circle">3</span>
+      </a>
+      <a href="#">
+        <div class="user-img"></div>
+        <i class="fas fa-caret-down"></i>
+      </a>
+    </div>
+  </header>
+  <section id="content-area">
+    <div class="heading">
+      <h1>Dashboard</h1>
+      <p>Welcoms to go job</p>
+    </div>
+    <div class="cards">
+      <div class="col-md-4">
+        <div class="card">
+          <div class=" user-img"></div>
+          <span class="user-name">kingkim</span>
+          <span class="user-title">Full-stack Developer</span>
+
+          <div class="col-md-3">
+            <span class="education">Education</span>
+          </div>
+          <div class="col-md-9">
+            <span class="schools">Grover Cleveland HS</span>
+            <span class="schools">New York University</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card2">
+          <h6>Interview Schedule</h6>
+          <i class=" fas fa-ellipsis-h"></i>
+          <span class="date">Jul 31, 2019</span>
+          <div class="col-md-3">
+            <span class="job-type">IT</span>
+          </div>
+          <div class="col-md-9">
+            <span class="schools">Best by HQ</span>
+            <span class="schools">Senior Developer</span>
+            <span class="time">09:30am</span>
+          </div>
+          <!-- 두번째 스케줄-->
+          <div class="col-md-3">
+            <span class="job-type">IT</span>
+          </div>
+          <div class="col-md-9">
+            <span class="schools">Best by HQ</span>
+            <span class="schools">Senior Developer</span>
+            <span class="time">09:30am</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card3">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              COMPANY
+            </th>
+            <th>
+              JOBS
+            </th>
+            <th>
+              End of Application
+            </th>
+            <th>
+              Location
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Online Shopping</td>
+            <td>Java Devleoper</td>
+            <td>July 10,2019</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Online Shopping</td>
+            <td>Java Devleoper</td>
+            <td>July 10,2019</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Online Shopping</td>
+            <td>Java Devleoper</td>
+            <td>July 10,2019</td>
+            <td>New York</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <script src="/public/js/mychart.js"></script>
 </body>
 
 </html>

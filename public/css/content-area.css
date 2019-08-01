@@ -1,0 +1,171 @@
+:root {
+    --purple-light: #302d43;
+    --purple-dark: #282639;
+    --neon-green: #92cf48;
+    --grey-light: #F4F6F9;
+    --grey-dark: #c8ccd6;
+}
+
+#content-area {
+    margin-left: 280px;
+    padding: 15px;
+}
+
+.heading {
+    margin: 20px 15px 20px 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--grey-dark)
+}
+
+.heading h1 {
+    color: purple;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.heading p {
+    color: #1b1b1b;
+    font-size: 0.8rem;
+}
+
+.cards {
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+
+.card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.cards>.col-md-4>.card>.user-img {
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cards>.col-md-4>.card>.user-name {
+    display: block;
+    color: purple;
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cards>.col-md-4>.card>.user-title {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: block;
+    color: var(--grey-dark);
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.education {
+    font-size: 0.8rem;
+    color: var(--grey-dark)
+}
+
+.schools {
+    font-size: 0.8rem;
+    display: block;
+
+}
+
+.col-md-4 {
+    width: 33.33%;
+    padding: 0 15px;
+    display: block;
+    float: left;
+}
+
+.col-md-3 {
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+.col-md-9 {
+    width: 75%;
+    padding-left: 15px;
+    display: block;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.card2 {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+h6 {
+    display: inline;
+    padding-left: 20px;
+    font-size: 0.8rem;
+
+}
+
+.fa-ellipsis-h {
+    float: right;
+    color: var(--grey-dark);
+}
+
+.date {
+    border-left: 4px solid var(--neon-green);
+    display: block;
+    padding-left: 30px;
+    line-height: 1.8rem;
+    margin: 20px 0 15px 0;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.job-type {
+    padding-left: 34px;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: var(--grey-dark);
+}
+
+.table {
+    margin: 0 15px;
+}
+
+table {
+
+    padding-right: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    background: var(--grey-dark);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+td {
+    border-bottom: 1px solid var(--grey-dark);
+    font-size: 0.8rem;
+}
+
+th,
+td {
+
+    text-align: left;
+    line-height: 2.2rem;
+    padding-left: 10px;
+}
